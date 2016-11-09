@@ -30,21 +30,24 @@ Then run `mix deps.get` in your shell to fetch the dependencies.
 
 ### Configuration
 
+To store your attachments in `Rackspace Cloud Files`, you'll need to provide a bucket destination in your application config:
+
 ```elixir
 config :arc,
   storage: Arc.Storage.Rackspace,
   rackspace_container_name: 'default',
   rackspace_cdn_url: 'http://XYZ.r54.cf3.rackcdn.com/'
 ```
+In addition, Rackspace must be configured with the appropriate credentials.
 
 ```elixir
 config :rackspace, :api,
   api_key:  "xxxxxxxxxxxxx",
   username: "yyyyyyyyyyyyy",
   password: "zzzzzzzzzzzzz"
-
-config :rackspace, :timeout, 20_0000 # default is 5_000
 ```
+
+Connection to Rackspace API's will require your username and either your account password, or your account api key. It is recommended that you use the api key which can be obtained by logging into your Rackspace account.
 
 You probably want to load the private key from an ENV variable rather than hard-code it the config.
 
