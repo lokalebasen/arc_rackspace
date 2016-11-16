@@ -6,7 +6,7 @@ defmodule Arc.Storage.Rackspace.Mixfile do
   def project do
     [app: :arc_rackspace,
      version: @version,
-     elixir: "~> 1.0",
+     elixir: "~> 1.3",
      deps: deps,
      description: description,
      package: package]
