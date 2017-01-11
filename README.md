@@ -62,8 +62,8 @@ You probably want to load the private key from an ENV variable rather than hard-
 
 ## License and Author
 
-Author 2016 Anton Maminov
+Author: 2016-2017 Anton Maminov
 
-Copyright: 2016 [Lokalebasen.dk](https://www.lokalebasen.dk/)
+Copyright: 2016-2017 [Lokalebasen.dk](https://www.lokalebasen.dk/)
 
 This project is licensed under the MIT license, a copy of which can be found in the LICENSE file.
