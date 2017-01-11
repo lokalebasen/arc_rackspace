@@ -33,7 +33,7 @@ defmodule Arc.Storage.Rackspace.Mixfile do
     [
       {:arc, "~> 0.6.0"},
       {:poison, "~> 2.0"},
-      {:rackspace, github: "lokalebasen/ex-rackspace"}
+      {:rackspace, github: "livehelpnow/ex-rackspace"}
     ]
   end
 end
