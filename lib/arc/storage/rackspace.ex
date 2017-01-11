@@ -19,12 +19,12 @@ defmodule Arc.Storage.Rackspace do
     data = extract_binary(file)
     file_name = URI.encode(rackspace_key)
 
-    Rackspace.Api.CloudFiles.Object.put(container_name, file_name, data)
+    Rackspace.Api.CloudFiles.Object.put(container_name(), file_name, data)
   end
 
   # Returns the public url for the file
   defp build_url(definition, version, file_and_scope, _options) do
-    Path.join cdn_host, rackspace_key(definition, version, file_and_scope)
+    Path.join cdn_host(), rackspace_key(definition, version, file_and_scope)
   end
 
   defp cdn_host do

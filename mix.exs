@@ -7,9 +7,9 @@ defmodule Arc.Storage.Rackspace.Mixfile do
     [app: :arc_rackspace,
      version: @version,
      elixir: "~> 1.3",
-     deps: deps,
-     description: description,
-     package: package]
+     deps: deps(),
+     description: description(),
+     package: package()]
   end
 
   defp description do
@@ -31,7 +31,7 @@ defmodule Arc.Storage.Rackspace.Mixfile do
 
   defp deps do
     [
-      {:arc, "~> 0.6.0-rc3"},
+      {:arc, "~> 0.6.0"},
       {:poison, "~> 2.0"},
       {:rackspace, github: "lokalebasen/ex-rackspace"}
     ]
