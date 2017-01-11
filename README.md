@@ -11,7 +11,7 @@ Add the latest stable release to your `mix.exs` file:
 ```elixir
 defp deps do
   [
-    arc_rackspace: "~> 0.0.1"
+    arc_rackspace: "~> 0.0.3"
   ]
 end
 ```
